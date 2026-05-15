@@ -1,0 +1,1226 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Xmx4g -Xms1g
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8 -Xmx4g -Xms1g
+executing /tmp/cpg_query.sc
+[cpg-query] Loading CPG from: /harness/cpg-output/cpg.bin
+Creating project `cpg.bin` for CPG at `/harness/cpg-output/cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /opt/joern/workspace/cpg.bin/cpg.bin.tmp
+[INFO ] initialising from existing storage (/opt/joern/workspace/cpg.bin/cpg.bin.tmp)
+Overlay dataflowOss already exists - skipping
+The graph has been modified. You may want to use the `save` command to persist changes to disk.  All changes will also be saved collectively on exit
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptInheritanceNamePass
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptInheritanceNamePass completed in 12 ms (67% on mutations). 0 + 0 changes committed from 0 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.ConstClosurePass
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.ConstClosurePass completed in 46 ms (12% on mutations). 33 + 0 changes committed from 1 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptImportResolverPass
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptImportResolverPass completed in 27 ms (15% on mutations). 224 + 0 changes committed from 100 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeRecovery
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeRecovery completed in 103 ms (5% on mutations). 1942 + 0 changes committed from 25 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeRecovery
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeRecovery completed in 54 ms (5% on mutations). 2070 + 0 changes committed from 25 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeHintCallLinker
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.JavaScriptTypeHintCallLinker completed in 21 ms (9% on mutations). 104 + 0 changes committed from 1 parts.
+[INFO ] Start of pass: io.joern.x2cpg.frontendspecific.jssrc2cpg.ObjectPropertyCallLinker
+[INFO ] Pass io.joern.x2cpg.frontendspecific.jssrc2cpg.ObjectPropertyCallLinker completed in 5 ms (11% on mutations). 0 + 0 changes committed from 1 parts.
+[INFO ] Start of pass: io.joern.x2cpg.passes.callgraph.NaiveCallLinker
+[INFO ] Pass io.joern.x2cpg.passes.callgraph.NaiveCallLinker completed in 4 ms (16% on mutations). 4 + 0 changes committed from 1 parts.
+[cpg-query] CPG loaded successfully.
+╔══════════════════════════════════════════════════════════════════╗
+║              CODE PROPERTY GRAPH — FULL REPORT                  ║
+╚══════════════════════════════════════════════════════════════════╝
+  Language : JavaScript/TypeScript
+  Source   : /harness
+  ┌─ STATISTICS ──────────────────────────────────────────────┐
+  │  Source files   :     25                                  │
+  │  Methods        :    171                                  │
+  │  Type decls     :     69                                  │
+  │  Call sites     :    445                                  │
+  │  Parameters     :    851                                  │
+  │  Literals       :    454                                  │
+  └────────────────────────────────────────────────────────────┘
+  ── SOURCE FILES (25) ──
+    app/assets/js/chart/chart-data-morris.js
+    app/assets/js/tour/redirects-steps.js
+    app/data/allocations-dao.js
+    app/data/benefits-dao.js
+    app/data/contributions-dao.js
+    app/data/memos-dao.js
+    app/data/profile-dao.js
+    app/data/research-dao.js
+    app/data/user-dao.js
+    app/routes/allocations.js
+    app/routes/benefits.js
+    app/routes/contributions.js
+    app/routes/error.js
+    app/routes/index.js
+    app/routes/memos.js
+    app/routes/profile.js
+    app/routes/research.js
+    app/routes/session.js
+    app/routes/tutorial.js
+    artifacts/db-reset.js
+    config/config.js
+    config/env/all.js
+    config/env/development.js
+    config/env/production.js
+    server.js
+  ── METHOD SIGNATURES (171) ──
+    app/assets/js/chart/chart-data-morris.js::program:$(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/assets/js/tour/redirects-steps.js::program:$(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/assets/js/chart/chart-data-morris.js::program(): ANY
+      @ app/assets/js/chart/chart-data-morris.js  [line 1]
+    app/assets/js/tour/redirects-steps.js::program(): ANY
+      @ app/assets/js/tour/redirects-steps.js  [line 1]
+    app/data/allocations-dao.js::program(): ANY
+      @ app/data/allocations-dao.js  [line 1]
+    app/data/benefits-dao.js::program(): ANY
+      @ app/data/benefits-dao.js  [line 1]
+    app/data/contributions-dao.js::program(): ANY
+      @ app/data/contributions-dao.js  [line 1]
+    app/data/memos-dao.js::program(): ANY
+      @ app/data/memos-dao.js  [line 1]
+    app/data/profile-dao.js::program(): ANY
+      @ app/data/profile-dao.js  [line 1]
+    app/data/research-dao.js::program(): ANY
+      @ app/data/research-dao.js  [line 1]
+    app/data/user-dao.js::program(): ANY
+      @ app/data/user-dao.js  [line 1]
+    app/routes/allocations.js::program(): ANY
+      @ app/routes/allocations.js  [line 1]
+    app/routes/benefits.js::program(): ANY
+      @ app/routes/benefits.js  [line 1]
+    app/routes/contributions.js::program(): ANY
+      @ app/routes/contributions.js  [line 1]
+    app/routes/error.js::program(): ANY
+      @ app/routes/error.js  [line 1]
+    app/routes/index.js::program(): ANY
+      @ app/routes/index.js  [line 1]
+    app/routes/memos.js::program(): ANY
+      @ app/routes/memos.js  [line 1]
+    app/routes/profile.js::program(): ANY
+      @ app/routes/profile.js  [line 1]
+    app/routes/research.js::program(): ANY
+      @ app/routes/research.js  [line 1]
+    app/routes/session.js::program(): ANY
+      @ app/routes/session.js  [line 1]
+    app/routes/tutorial.js::program(): ANY
+      @ app/routes/tutorial.js  [line 1]
+    artifacts/db-reset.js::program(): ANY
+      @ artifacts/db-reset.js  [line 1]
+    config/config.js::program(): ANY
+      @ config/config.js  [line 1]
+    config/env/all.js::program(): ANY
+      @ config/env/all.js  [line 1]
+    config/env/development.js::program(): ANY
+      @ config/env/development.js  [line 1]
+    config/env/production.js::program(): ANY
+      @ config/env/production.js  [line 1]
+    server.js::program(): ANY
+      @ server.js  [line 1]
+    app/data/allocations-dao.js::program:AllocationsDAO(db: ANY): AllocationsDAO | ANY
+      @ app/data/allocations-dao.js  [line 4]
+    app/routes/allocations.js::program:AllocationsHandler(db: ANY): void
+      @ app/routes/allocations.js  [line 6]
+    app/data/benefits-dao.js::program:BenefitsDAO(db: ANY): app/data/benefits-dao.js::program:BenefitsDAO
+      @ app/data/benefits-dao.js  [line 2]
+    app/routes/benefits.js::program:BenefitsHandler(db: ANY): void
+      @ app/routes/benefits.js  [line 8]
+    app/data/contributions-dao.js::program:ContributionsDAO(db: ANY): app/data/contributions-dao.js::program:ContributionsDAO
+      @ app/data/contributions-dao.js  [line 4]
+    app/routes/contributions.js::program:ContributionsHandler(db: ANY): void
+      @ app/routes/contributions.js  [line 7]
+    app/data/memos-dao.js::program:MemosDAO(db: ANY): app/data/memos-dao.js::program:MemosDAO
+      @ app/data/memos-dao.js  [line 2]
+    app/routes/memos.js::program:MemosHandler(db: ANY): void
+      @ app/routes/memos.js  [line 6]
+    app/data/profile-dao.js::program:ProfileDAO(db: ANY): app/data/profile-dao.js::program:ProfileDAO
+      @ app/data/profile-dao.js  [line 2]
+    app/routes/profile.js::program:ProfileHandler(db: ANY): void
+      @ app/routes/profile.js  [line 8]
+    app/data/research-dao.js::program:ResearchDAO(db: ANY): app/data/research-dao.js::program:ResearchDAO
+      @ app/data/research-dao.js  [line 2]
+    app/routes/research.js::program:ResearchHandler(db: ANY): void
+      @ app/routes/research.js  [line 7]
+    express:Router(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/session.js::program:SessionHandler(db: ANY): void
+      @ app/routes/session.js  [line 8]
+    app/data/user-dao.js::program:UserDAO(db: ANY): app/data/user-dao.js::program:UserDAO
+      @ app/data/user-dao.js  [line 4]
+    __ecma.Array.factory(p0: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Array:(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:UserDAO:addUser(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY, p7: ANY): ANY
+      @ <empty>  [line -1]
+    UserDAO:addUser(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY, p7: ANY): ANY
+      @ <empty>  [line -1]
+    Promise.all(p1: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/allocations-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/benefits-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/contributions-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/memos-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/profile-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:callback(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Math:ceil(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:UserDAO:<lambda>4:comparePassword(fromDB: ANY, fromUser: ANY): __ecma.Boolean
+      @ app/data/user-dao.js  [line 60]
+    mongodb:connect(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    http:createServer(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    req:session:<returnValue>:<member>(session):destroy(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/memos.js::program:displayMemos(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):dropCollection(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    node-esapi:encoder:<returnValue>:encodeForHTML(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    node-esapi:encoder(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    express:<returnValue>:engine(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    __whatwg.console:error(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/error.js::program:errorHandler(err: ANY, req: ANY, res: ANY, next: ANY): void
+      @ app/routes/error.js  [line 3]
+    eval(p1: ANY): ANY
+      @ <empty>  [line -1]
+    express(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    express-session(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:find(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:findAndModify(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:findOne(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Math:floor(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    { userId: ANY; stocks: ANY; funds: ANY; bonds: ANY; }:forEach(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    data:ops:<returnValue>:<member>(ops):forEach(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Array:forEach(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    needle:get(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    express:Router:<returnValue>:get(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/memos-dao.js::program:MemosDAO:getAllMemos(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    MemosDAO:getAllMemos(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/benefits-dao.js::program:BenefitsDAO:getAllNonAdminUsers(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    BenefitsDAO:getAllNonAdminUsers(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/contributions-dao.js::program:ContributionsDAO:getByUserId(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    ContributionsDAO:getByUserId(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/profile-dao.js::program:ProfileDAO:getByUserId(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    ProfileDAO:getByUserId(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/allocations-dao.js::program:AllocationsDAO:getByUserIdAndThreshold(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    AllocationsDAO:getByUserIdAndThreshold(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    DateConstructor:getDay(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Date:getDay(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Date:getFullYear(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    DateConstructor:getFullYear(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    DateConstructor:getMonth(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Date:getMonth(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:getNextSequence(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:getRandomFutureDate(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:UserDAO:getUserById(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    UserDAO:getUserById(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:UserDAO:getUserByUserName(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    UserDAO:getUserByUserName(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/index.js::program:index(app: ANY, db: ANY): void
+      @ app/routes/index.js  [line 11]
+    app/data/memos-dao.js::program:MemosDAO:insert(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    MemosDAO:insert(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:insert(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:insertMany(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    util:inspect(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    isNaN(p1: ANY): ANY
+      @ <empty>  [line -1]
+    body-parser:json(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    http:createServer:<returnValue>:listen(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    __whatwg.console:log(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Array:map(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/allocations.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/benefits.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/contributions.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/memos.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/profile.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/session.js::program:next(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/assets/js/tour/redirects-steps.js::program:$:<returnValue>:on(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    parseInt(p1: ANY): ANY
+      @ <empty>  [line -1]
+    artifacts/db-reset.js::program:parseResponse(err: ANY, res: ANY, comm: ANY): void
+      @ artifacts/db-reset.js  [line 50]
+    app/routes/session.js::program:SessionHandler:prepareUserData(user: ANY, next: ANY): void
+      @ app/routes/session.js  [line 14]
+    __ecma.Array:push(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Math:random(p0: ANY, p1: ANY): ANY
+      @ <empty>  [line -1]
+    req:session:<returnValue>:<member>(session):regenerate(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/allocations-dao.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/contributions-dao.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/allocations.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/benefits.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/contributions.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/index.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/memos.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/profile.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/research.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/session.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/tutorial.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    artifacts/db-reset.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    config/config.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    server.js::program:require(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    artifacts/db-reset.js::program:resolve(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    path:resolve(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    server.js::program:routes(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/allocations-dao.js::program:<lambda>0:<lambda>4:searchCriteria(): { $where: __ecma.String; userId?: ANY; } | { userId: __ecma.Number; $where?: ANY; }
+      @ app/data/allocations-dao.js  [line 60]
+    app/data/research-dao.js::program:ResearchDAO:<lambda>0:searchCriteria(): { symbol: ANY; } | ANY
+      @ app/data/research-dao.js  [line 15]
+    serve-favicon(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    express:<returnValue>:set(p0: ANY, p1: ANY, p2: ANY, p3: ANY): ANY
+      @ <empty>  [line -1]
+    swig:setDefaults(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    marked:setOptions(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.Array:some(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:find:<returnValue>:sort(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    express:static(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    JSON.stringify(p1: ANY): ANY
+      @ <empty>  [line -1]
+    RegExp:test(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    __ecma.String:test(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    Promise.all:<returnValue>:then(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    _tmp_1:db:<returnValue>:<member>(db):collection:<returnValue>:find:<returnValue>:toArray(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    artifacts/db-reset.js::program:tryDropCollection(db: ANY, name: ANY): Promise<any>
+      @ artifacts/db-reset.js  [line 39]
+    app/data/contributions-dao.js::program:ContributionsDAO:update(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY): ANY
+      @ <empty>  [line -1]
+    ContributionsDAO:update(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/allocations-dao.js::program:AllocationsDAO:update(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY): ANY
+      @ <empty>  [line -1]
+    AllocationsDAO:update(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/benefits-dao.js::program:BenefitsDAO:updateBenefits(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    BenefitsDAO:updateBenefits(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/profile-dao.js::program:ProfileDAO:updateUser(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY, p7: ANY, p8: ANY, p9: ANY, p10: ANY): ANY
+      @ <empty>  [line -1]
+    ProfileDAO:updateUser(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY, p5: ANY, p6: ANY, p7: ANY, p8: ANY, p9: ANY, p10: ANY): ANY
+      @ <empty>  [line -1]
+    body-parser:urlencoded(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    express:<returnValue>:use(p0: ANY, p1: ANY, p2: ANY): ANY
+      @ <empty>  [line -1]
+    app/data/user-dao.js::program:UserDAO:validateLogin(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    UserDAO:validateLogin(p0: ANY, p1: ANY, p2: ANY, p3: ANY, p4: ANY): ANY
+      @ <empty>  [line -1]
+    app/routes/session.js::program:SessionHandler:validateSignup(userName: ANY, firstName: ANY, lastName: ANY, password: ANY, verify: ANY, email: ANY, errors: ANY): __ecma.Boolean
+      @ app/routes/session.js  [line 138]
+    app/data/user-dao.js::program:UserDAO:<lambda>4:validateUserDoc(err: ANY, user: ANY): app/data/user-dao.js::program:callback:<returnValue>
+      @ app/data/user-dao.js  [line 70]
+  ── CALL GRAPH EDGES (445) ──
+    :program  ->    [app/assets/js/tour/redirects-steps.js:7]
+    :program  ->    [app/assets/js/tour/redirects-steps.js:11]
+    :program  ->    [app/assets/js/tour/redirects-steps.js:15]
+    :program  ->    [app/assets/js/tour/redirects-steps.js:19]
+    :program  ->    [app/routes/tutorial.js:16]
+    :program  ->    [app/routes/tutorial.js:17]
+    :program  ->    [app/routes/tutorial.js:18]
+    :program  ->    [app/routes/tutorial.js:19]
+    :program  ->    [app/routes/tutorial.js:20]
+    :program  ->    [app/routes/tutorial.js:21]
+    :program  ->    [app/routes/tutorial.js:22]
+    :program  ->    [app/routes/tutorial.js:23]
+    :program  ->    [app/routes/tutorial.js:24]
+    :program  ->    [app/routes/tutorial.js:25]
+    :program  ->    [app/routes/tutorial.js:26]
+    :program  ->    [app/routes/tutorial.js:27]
+    :program  ->    [artifacts/db-reset.js:13]
+    :program  ->    [artifacts/db-reset.js:21]
+    :program  ->    [artifacts/db-reset.js:29]
+    :program  ->    [config/env/development.js:11]
+    :program  ->  $  [app/assets/js/chart/chart-data-morris.js:2]
+    :program  ->  $  [app/assets/js/tour/redirects-steps.js:25]
+    :program  ->  Router  [app/routes/tutorial.js:6]
+    :program  ->  __ecma.Array.factory  [app/assets/js/tour/redirects-steps.js:7]
+    :program  ->  __ecma.Array.factory  [app/routes/tutorial.js:15]
+    :program  ->  __ecma.Array.factory  [artifacts/db-reset.js:12]
+    :program  ->  __ecma.Array.factory  [config/env/all.js:12]
+    :program  ->  __ecma.Array.factory  [config/env/development.js:9]
+    :program  ->  addSteps  [app/assets/js/tour/redirects-steps.js:7]
+    :program  ->  connect  [artifacts/db-reset.js:63]
+    :program  ->  connect  [server.js:30]
+    :program  ->  express  [server.js:15]
+    :program  ->  get  [app/routes/tutorial.js:8]
+    :program  ->  get  [app/routes/tutorial.js:31]
+    :program  ->  inspect  [config/config.js:13]
+    :program  ->  log  [config/config.js:12]
+    :program  ->  log  [config/config.js:13]
+    :program  ->  next  [app/routes/tutorial.js:30]
+    :program  ->  on  [app/assets/js/tour/redirects-steps.js:25]
+    :program  ->  require  [app/data/allocations-dao.js:1]
+    :program  ->  require  [app/data/contributions-dao.js:1]
+    :program  ->  require  [app/data/user-dao.js:1]
+    :program  ->  require  [app/routes/allocations.js:4]
+    :program  ->  require  [app/routes/allocations.js:1]
+    :program  ->  require  [app/routes/benefits.js:3]
+    :program  ->  require  [app/routes/benefits.js:6]
+    :program  ->  require  [app/routes/contributions.js:4]
+    :program  ->  require  [app/routes/contributions.js:1]
+    :program  ->  require  [app/routes/index.js:1]
+    :program  ->  require  [app/routes/index.js:2]
+    :program  ->  require  [app/routes/index.js:3]
+    :program  ->  require  [app/routes/index.js:4]
+    :program  ->  require  [app/routes/index.js:5]
+    :program  ->  require  [app/routes/index.js:6]
+    :program  ->  require  [app/routes/index.js:7]
+    :program  ->  require  [app/routes/index.js:8]
+    :program  ->  require  [app/routes/index.js:9]
+    :program  ->  require  [app/routes/memos.js:4]
+    :program  ->  require  [app/routes/memos.js:1]
+    :program  ->  require  [app/routes/profile.js:2]
+    :program  ->  require  [app/routes/profile.js:5]
+    :program  ->  require  [app/routes/profile.js:1]
+    :program  ->  require  [app/routes/research.js:2]
+    :program  ->  require  [app/routes/research.js:5]
+    :program  ->  require  [app/routes/research.js:1]
+    :program  ->  require  [app/routes/session.js:5]
+    :program  ->  require  [app/routes/session.js:1]
+    :program  ->  require  [app/routes/session.js:2]
+    :program  ->  require  [app/routes/tutorial.js:1]
+    :program  ->  require  [app/routes/tutorial.js:4]
+    :program  ->  require  [artifacts/db-reset.js:9]
+    :program  ->  require  [artifacts/db-reset.js:10]
+    :program  ->  require  [config/config.js:1]
+    :program  ->  require  [config/config.js:2]
+    :program  ->  require  [config/config.js:3]
+    :program  ->  require  [config/config.js:7]
+    :program  ->  require  [config/config.js:8]
+    :program  ->  require  [server.js:3]
+    :program  ->  require  [server.js:4]
+    :program  ->  require  [server.js:5]
+    :program  ->  require  [server.js:6]
+    :program  ->  require  [server.js:8]
+    :program  ->  require  [server.js:9]
+    :program  ->  require  [server.js:12]
+    :program  ->  require  [server.js:13]
+    :program  ->  require  [server.js:16]
+    :program  ->  require  [server.js:17]
+    :program  ->  require  [server.js:11]
+    :program  ->  resolve  [config/config.js:7]
+    :program  ->  resolve  [config/config.js:8]
+    :program  ->  toLowerCase  [config/config.js:8]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:15]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:18]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:21]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:24]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:27]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:30]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:33]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:36]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:39]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:42]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:45]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:48]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:51]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:54]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:57]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:60]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:63]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:66]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:69]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:72]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:75]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:78]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:81]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:84]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:87]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:90]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:93]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:96]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:99]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:102]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:105]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:113]
+    <lambda>0  ->    [app/assets/js/chart/chart-data-morris.js:115]
+    <lambda>0  ->  $  [app/assets/js/chart/chart-data-morris.js:6]
+    <lambda>0  ->  Area  [app/assets/js/chart/chart-data-morris.js:11]
+    <lambda>0  ->  __ecma.Array.factory  [app/assets/js/chart/chart-data-morris.js:15]
+    <lambda>0  ->  __ecma.Array.factory  [app/assets/js/chart/chart-data-morris.js:113]
+    <lambda>0  ->  __ecma.Array.factory  [app/assets/js/chart/chart-data-morris.js:115]
+    <lambda>0  ->  createServer  [server.js:145]
+    <lambda>0  ->  engine  [server.js:116]
+    <lambda>0  ->  exit  [server.js:34]
+    <lambda>0  ->  favicon  [server.js:68]
+    <lambda>0  ->  find  [app/data/benefits-dao.js:16]
+    <lambda>0  ->  get  [app/routes/research.js:16]
+    <lambda>0  ->  getAllNonAdminUsers  [app/routes/benefits.js:15]
+    <lambda>0  ->  getByUserId  [app/routes/contributions.js:17]
+    <lambda>0  ->  getByUserId  [app/routes/profile.js:20]
+    <lambda>0  ->  getByUserIdAndThreshold  [app/routes/allocations.js:23]
+    <lambda>0  ->  getFullYear  [app/assets/js/chart/chart-data-morris.js:7]
+    <lambda>0  ->  getNextSequence  [app/data/user-dao.js:38]
+    <lambda>0  ->  getRandomFutureDate  [app/data/user-dao.js:24]
+    <lambda>0  ->  init  [app/assets/js/tour/redirects-steps.js:27]
+    <lambda>0  ->  insert  [app/data/memos-dao.js:23]
+    <lambda>0  ->  insert  [app/routes/memos.js:13]
+    <lambda>0  ->  json  [server.js:71]
+    <lambda>0  ->  listen  [server.js:145]
+    <lambda>0  ->  log  [server.js:32]
+    <lambda>0  ->  log  [server.js:33]
+    <lambda>0  ->  log  [server.js:36]
+    <lambda>0  ->  parseInt  [app/data/contributions-dao.js:18]
+    <lambda>0  ->  parseInt  [app/data/profile-dao.js:79]
+    <lambda>0  ->  parseInt  [app/routes/profile.js:20]
+    <lambda>0  ->  render  [app/routes/research.js:31]
+    <lambda>0  ->  render  [app/routes/tutorial.js:10]
+    <lambda>0  ->  restart  [app/assets/js/tour/redirects-steps.js:28]
+    <lambda>0  ->  routes  [server.js:132]
+    <lambda>0  ->  session  [server.js:78]
+    <lambda>0  ->  set  [server.js:117]
+    <lambda>0  ->  set  [server.js:118]
+    <lambda>0  ->  setDefaults  [server.js:135]
+    <lambda>0  ->  setOptions  [server.js:126]
+    <lambda>0  ->  static  [server.js:121]
+    <lambda>0  ->  toArray  [app/data/benefits-dao.js:16]
+    <lambda>0  ->  update  [app/data/contributions-dao.js:28]
+    <lambda>0  ->  update  [app/data/profile-dao.js:78]
+    <lambda>0  ->  urlencoded  [server.js:72]
+    <lambda>0  ->  use  [server.js:68]
+    <lambda>0  ->  use  [server.js:71]
+    <lambda>0  ->  use  [server.js:72]
+    <lambda>0  ->  use  [server.js:78]
+    <lambda>0  ->  use  [server.js:121]
+    <lambda>1  ->  callback  [app/data/benefits-dao.js:20]
+    <lambda>1  ->  callback  [app/data/contributions-dao.js:50]
+    <lambda>1  ->  callback  [app/data/memos-dao.js:23]
+    <lambda>1  ->  callback  [app/data/profile-dao.js:86]
+    <lambda>1  ->  callback  [app/data/profile-dao.js:89]
+    <lambda>1  ->  callback  [app/data/user-dao.js:40]
+    <lambda>1  ->  displayMemos  [app/routes/memos.js:15]
+    <lambda>1  ->  dropCollection  [artifacts/db-reset.js:41]
+    <lambda>1  ->  encodeForHTML  [app/routes/profile.js:28]
+    <lambda>1  ->  encoder  [app/routes/profile.js:28]
+    <lambda>1  ->  end  [app/routes/research.js:27]
+    <lambda>1  ->  getUserById  [app/data/contributions-dao.js:38]
+    <lambda>1  ->  insert  [app/data/user-dao.js:45]
+    <lambda>1  ->  log  [app/data/contributions-dao.js:36]
+    <lambda>1  ->  log  [app/data/profile-dao.js:85]
+    <lambda>1  ->  log  [app/data/user-dao.js:42]
+    <lambda>1  ->  log  [server.js:146]
+    <lambda>1  ->  next  [app/routes/allocations.js:24]
+    <lambda>1  ->  next  [app/routes/benefits.js:17]
+    <lambda>1  ->  next  [app/routes/contributions.js:18]
+    <lambda>1  ->  next  [app/routes/memos.js:14]
+    <lambda>1  ->  next  [app/routes/profile.js:21]
+    <lambda>1  ->  next  [app/routes/session.js:21]
+    <lambda>1  ->  parseInt  [app/data/allocations-dao.js:19]
+    <lambda>1  ->  redirect  [app/routes/index.js:72]
+    <lambda>1  ->  render  [app/routes/allocations.js:25]
+    <lambda>1  ->  render  [app/routes/benefits.js:19]
+    <lambda>1  ->  render  [app/routes/contributions.js:21]
+    <lambda>1  ->  render  [app/routes/profile.js:33]
+    <lambda>1  ->  render  [app/routes/tutorial.js:33]
+    <lambda>1  ->  update  [app/data/allocations-dao.js:29]
+    <lambda>1  ->  write  [app/routes/research.js:22]
+    <lambda>1  ->  write  [app/routes/research.js:23]
+    <lambda>1  ->  write  [app/routes/research.js:25]
+    <lambda>1  ->  writeHead  [app/routes/research.js:18]
+    <lambda>10  ->  callback  [app/data/user-dao.js:119]
+    <lambda>10  ->  floor  [artifacts/db-reset.js:113]
+    <lambda>10  ->  floor  [artifacts/db-reset.js:114]
+    <lambda>10  ->  push  [artifacts/db-reset.js:116]
+    <lambda>10  ->  random  [artifacts/db-reset.js:113]
+    <lambda>10  ->  random  [artifacts/db-reset.js:114]
+    <lambda>10  ->  render  [app/routes/session.js:126]
+    <lambda>11  ->  log  [artifacts/db-reset.js:125]
+    <lambda>11  ->  stringify  [artifacts/db-reset.js:125]
+    <lambda>12  ->  exit  [artifacts/db-reset.js:130]
+    <lambda>12  ->  getUserByUserName  [app/routes/session.js:208]
+    <lambda>12  ->  log  [app/routes/session.js:248]
+    <lambda>12  ->  log  [artifacts/db-reset.js:129]
+    <lambda>12  ->  parseResponse  [artifacts/db-reset.js:128]
+    <lambda>12  ->  render  [app/routes/session.js:249]
+    <lambda>12  ->  validateSignup  [app/routes/session.js:206]
+    <lambda>13  ->  addUser  [app/routes/session.js:220]
+    <lambda>13  ->  next  [app/routes/session.js:210]
+    <lambda>13  ->  render  [app/routes/session.js:214]
+    <lambda>14  ->  next  [app/routes/session.js:222]
+    <lambda>14  ->  prepareUserData  [app/routes/session.js:225]
+    <lambda>14  ->  regenerate  [app/routes/session.js:234]
+    <lambda>15  ->  render  [app/routes/session.js:239]
+    <lambda>16  ->  getUserById  [app/routes/session.js:266]
+    <lambda>16  ->  log  [app/routes/session.js:260]
+    <lambda>16  ->  redirect  [app/routes/session.js:261]
+    <lambda>17  ->  next  [app/routes/session.js:267]
+    <lambda>17  ->  render  [app/routes/session.js:269]
+    <lambda>2  ->    [app/routes/contributions.js:47]
+    <lambda>2  ->  __ecma.Array.factory  [app/routes/contributions.js:47]
+    <lambda>2  ->  callback  [app/data/allocations-dao.js:53]
+    <lambda>2  ->  callback  [app/data/contributions-dao.js:40]
+    <lambda>2  ->  callback  [app/data/contributions-dao.js:47]
+    <lambda>2  ->  callback  [app/data/user-dao.js:45]
+    <lambda>2  ->  eval  [app/routes/contributions.js:32]
+    <lambda>2  ->  eval  [app/routes/contributions.js:33]
+    <lambda>2  ->  eval  [app/routes/contributions.js:34]
+    <lambda>2  ->  find  [app/data/memos-dao.js:28]
+    <lambda>2  ->  findOne  [app/data/profile-dao.js:95]
+    <lambda>2  ->  getAllMemos  [app/routes/memos.js:25]
+    <lambda>2  ->  getUserById  [app/data/allocations-dao.js:39]
+    <lambda>2  ->  getUserById  [app/routes/session.js:27]
+    <lambda>2  ->  isNaN  [app/routes/contributions.js:47]
+    <lambda>2  ->  log  [app/data/allocations-dao.js:37]
+    <lambda>2  ->  log  [app/routes/session.js:31]
+    <lambda>2  ->  log  [artifacts/db-reset.js:43]
+    <lambda>2  ->  parseInt  [app/data/benefits-dao.js:25]
+    <lambda>2  ->  parseInt  [app/data/profile-dao.js:96]
+    <lambda>2  ->  parseInt  [app/routes/profile.js:83]
+    <lambda>2  ->  redirect  [app/routes/session.js:32]
+    <lambda>2  ->  render  [app/routes/contributions.js:50]
+    <lambda>2  ->  render  [app/routes/contributions.js:58]
+    <lambda>2  ->  render  [app/routes/profile.js:65]
+    <lambda>2  ->  resolve  [artifacts/db-reset.js:45]
+    <lambda>2  ->  some  [app/routes/contributions.js:48]
+    <lambda>2  ->  sort  [app/data/memos-dao.js:28]
+    <lambda>2  ->  test  [app/routes/profile.js:61]
+    <lambda>2  ->  toArray  [app/data/memos-dao.js:28]
+    <lambda>2  ->  update  [app/data/benefits-dao.js:24]
+    <lambda>2  ->  update  [app/routes/contributions.js:65]
+    <lambda>2  ->  updateBenefits  [app/routes/benefits.js:35]
+    <lambda>2  ->  updateUser  [app/routes/profile.js:82]
+    <lambda>3  ->  callback  [app/data/allocations-dao.js:41]
+    <lambda>3  ->  callback  [app/data/allocations-dao.js:49]
+    <lambda>3  ->  callback  [app/data/benefits-dao.js:34]
+    <lambda>3  ->  callback  [app/data/benefits-dao.js:37]
+    <lambda>3  ->  callback  [app/data/memos-dao.js:31]
+    <lambda>3  ->  callback  [app/data/memos-dao.js:32]
+    <lambda>3  ->  callback  [app/data/memos-dao.js:33]
+    <lambda>3  ->  callback  [app/data/profile-dao.js:99]
+    <lambda>3  ->  callback  [app/data/profile-dao.js:107]
+    <lambda>3  ->  ceil  [app/data/user-dao.js:53]
+    <lambda>3  ->  findOne  [app/data/contributions-dao.js:57]
+    <lambda>3  ->  floor  [app/data/user-dao.js:51]
+    <lambda>3  ->  floor  [app/data/user-dao.js:52]
+    <lambda>3  ->  getAllNonAdminUsers  [app/routes/benefits.js:39]
+    <lambda>3  ->  getDay  [app/data/user-dao.js:51]
+    <lambda>3  ->  getFullYear  [app/data/user-dao.js:53]
+    <lambda>3  ->  getMonth  [app/data/user-dao.js:52]
+    <lambda>3  ->  log  [app/data/benefits-dao.js:33]
+    <lambda>3  ->  next  [app/routes/benefits.js:37]
+    <lambda>3  ->  next  [app/routes/memos.js:26]
+    <lambda>3  ->  next  [app/routes/profile.js:93]
+    <lambda>3  ->  next  [app/routes/session.js:28]
+    <lambda>3  ->  random  [app/data/user-dao.js:51]
+    <lambda>3  ->  random  [app/data/user-dao.js:52]
+    <lambda>3  ->  random  [app/data/user-dao.js:53]
+    <lambda>3  ->  redirect  [app/routes/session.js:28]
+    <lambda>3  ->  render  [app/routes/memos.js:27]
+    <lambda>3  ->  render  [app/routes/profile.js:100]
+    <lambda>3  ->  slice  [app/data/user-dao.js:54]
+    <lambda>4  ->    [artifacts/db-reset.js:72]
+    <lambda>4  ->    [artifacts/db-reset.js:73]
+    <lambda>4  ->    [artifacts/db-reset.js:74]
+    <lambda>4  ->    [artifacts/db-reset.js:75]
+    <lambda>4  ->    [artifacts/db-reset.js:76]
+    <lambda>4  ->  __ecma.Array.factory  [artifacts/db-reset.js:71]
+    <lambda>4  ->  all  [artifacts/db-reset.js:84]
+    <lambda>4  ->  callback  [app/data/contributions-dao.js:61]
+    <lambda>4  ->  exit  [artifacts/db-reset.js:67]
+    <lambda>4  ->  find  [app/data/allocations-dao.js:86]
+    <lambda>4  ->  findOne  [app/data/user-dao.js:91]
+    <lambda>4  ->  getUserById  [app/data/contributions-dao.js:71]
+    <lambda>4  ->  log  [app/routes/session.js:40]
+    <lambda>4  ->  log  [artifacts/db-reset.js:65]
+    <lambda>4  ->  log  [artifacts/db-reset.js:66]
+    <lambda>4  ->  log  [artifacts/db-reset.js:69]
+    <lambda>4  ->  log  [artifacts/db-reset.js:80]
+    <lambda>4  ->  map  [artifacts/db-reset.js:81]
+    <lambda>4  ->  next  [app/routes/benefits.js:40]
+    <lambda>4  ->  next  [app/routes/contributions.js:67]
+    <lambda>4  ->  next  [app/routes/session.js:38]
+    <lambda>4  ->  parseInt  [app/data/allocations-dao.js:58]
+    <lambda>4  ->  redirect  [app/routes/session.js:41]
+    <lambda>4  ->  render  [app/routes/benefits.js:51]
+    <lambda>4  ->  render  [app/routes/contributions.js:70]
+    <lambda>4  ->  searchCriteria  [app/data/allocations-dao.js:86]
+    <lambda>4  ->  stringify  [artifacts/db-reset.js:66]
+    <lambda>4  ->  then  [artifacts/db-reset.js:84]
+    <lambda>4  ->  toArray  [app/data/allocations-dao.js:86]
+    <lambda>5  ->  callback  [app/data/contributions-dao.js:73]
+    <lambda>5  ->  callback  [app/data/contributions-dao.js:79]
+    <lambda>5  ->  render  [app/routes/session.js:45]
+    <lambda>5  ->  tryDropCollection  [artifacts/db-reset.js:81]
+    <lambda>6  ->  __ecma.Array.factory  [app/data/allocations-dao.js:91]
+    <lambda>6  ->  callback  [app/data/allocations-dao.js:87]
+    <lambda>6  ->  callback  [app/data/allocations-dao.js:88]
+    <lambda>6  ->  collection  [artifacts/db-reset.js:85]
+    <lambda>6  ->  collection  [artifacts/db-reset.js:86]
+    <lambda>6  ->  collection  [artifacts/db-reset.js:87]
+    <lambda>6  ->  forEach  [app/data/allocations-dao.js:93]
+    <lambda>6  ->  forEach  [artifacts/db-reset.js:99]
+    <lambda>6  ->  insert  [artifacts/db-reset.js:90]
+    <lambda>6  ->  insertMany  [artifacts/db-reset.js:101]
+    <lambda>6  ->  log  [artifacts/db-reset.js:98]
+    <lambda>6  ->  validateLogin  [app/routes/session.js:58]
+    <lambda>7  ->  findOne  [app/data/user-dao.js:98]
+    <lambda>7  ->  getUserById  [app/data/allocations-dao.js:94]
+    <lambda>7  ->  log  [app/routes/session.js:64]
+    <lambda>7  ->  next  [app/routes/session.js:100]
+    <lambda>7  ->  parseInt  [app/data/user-dao.js:99]
+    <lambda>7  ->  parseResponse  [artifacts/db-reset.js:94]
+    <lambda>7  ->  redirect  [app/routes/session.js:117]
+    <lambda>7  ->  render  [app/routes/session.js:82]
+    <lambda>7  ->  render  [app/routes/session.js:91]
+    <lambda>8  ->  callback  [app/data/allocations-dao.js:95]
+    <lambda>8  ->  callback  [app/data/allocations-dao.js:105]
+    <lambda>8  ->  destroy  [app/routes/session.js:122]
+    <lambda>8  ->  findOne  [app/data/user-dao.js:104]
+    <lambda>8  ->  log  [artifacts/db-reset.js:99]
+    <lambda>8  ->  push  [app/data/allocations-dao.js:102]
+    <lambda>8  ->  stringify  [artifacts/db-reset.js:99]
+    <lambda>9  ->  __ecma.Array.factory  [app/data/user-dao.js:112]
+    <lambda>9  ->  __ecma.Array.factory  [artifacts/db-reset.js:102]
+    <lambda>9  ->  collection  [app/data/user-dao.js:110]
+    <lambda>9  ->  exit  [artifacts/db-reset.js:108]
+    <lambda>9  ->  findAndModify  [app/data/user-dao.js:110]
+    <lambda>9  ->  forEach  [artifacts/db-reset.js:112]
+    <lambda>9  ->  forEach  [artifacts/db-reset.js:125]
+    <lambda>9  ->  insertMany  [artifacts/db-reset.js:127]
+    <lambda>9  ->  log  [artifacts/db-reset.js:106]
+    <lambda>9  ->  log  [artifacts/db-reset.js:107]
+    <lambda>9  ->  log  [artifacts/db-reset.js:124]
+    <lambda>9  ->  parseResponse  [artifacts/db-reset.js:110]
+    <lambda>9  ->  redirect  [app/routes/session.js:122]
+    <lambda>9  ->  stringify  [artifacts/db-reset.js:107]
+    AllocationsDAO  ->  collection  [app/data/allocations-dao.js:15]
+    AllocationsDAO  ->  log  [app/data/allocations-dao.js:11]
+    BenefitsDAO  ->  collection  [app/data/benefits-dao.js:13]
+    BenefitsDAO  ->  log  [app/data/benefits-dao.js:9]
+    ContributionsDAO  ->  collection  [app/data/contributions-dao.js:14]
+    ContributionsDAO  ->  log  [app/data/contributions-dao.js:10]
+    MemosDAO  ->  collection  [app/data/memos-dao.js:13]
+    MemosDAO  ->  log  [app/data/memos-dao.js:9]
+    ProfileDAO  ->  collection  [app/data/profile-dao.js:13]
+    ProfileDAO  ->  log  [app/data/profile-dao.js:9]
+    ResearchDAO  ->  log  [app/data/research-dao.js:9]
+    UserDAO  ->  collection  [app/data/user-dao.js:15]
+    UserDAO  ->  log  [app/data/user-dao.js:11]
+    errorHandler  ->  error  [app/routes/error.js:7]
+    errorHandler  ->  error  [app/routes/error.js:8]
+    errorHandler  ->  render  [app/routes/error.js:10]
+    errorHandler  ->  status  [app/routes/error.js:9]
+    index  ->  get  [app/routes/index.js:30]
+    index  ->  get  [app/routes/index.js:33]
+    index  ->  get  [app/routes/index.js:37]
+    index  ->  get  [app/routes/index.js:41]
+    index  ->  get  [app/routes/index.js:44]
+    index  ->  get  [app/routes/index.js:47]
+    index  ->  get  [app/routes/index.js:51]
+    index  ->  get  [app/routes/index.js:55]
+    index  ->  get  [app/routes/index.js:63]
+    index  ->  get  [app/routes/index.js:66]
+    index  ->  get  [app/routes/index.js:70]
+    index  ->  get  [app/routes/index.js:76]
+    index  ->  post  [app/routes/index.js:34]
+    index  ->  post  [app/routes/index.js:38]
+    index  ->  post  [app/routes/index.js:48]
+    index  ->  post  [app/routes/index.js:52]
+    index  ->  post  [app/routes/index.js:56]
+    index  ->  post  [app/routes/index.js:67]
+    index  ->  use  [app/routes/index.js:79]
+    index  ->  use  [app/routes/index.js:82]
+    parseResponse  ->  exit  [artifacts/db-reset.js:55]
+    parseResponse  ->  log  [artifacts/db-reset.js:52]
+    parseResponse  ->  log  [artifacts/db-reset.js:53]
+    parseResponse  ->  log  [artifacts/db-reset.js:54]
+    parseResponse  ->  log  [artifacts/db-reset.js:57]
+    parseResponse  ->  log  [artifacts/db-reset.js:58]
+    parseResponse  ->  stringify  [artifacts/db-reset.js:54]
+    parseResponse  ->  stringify  [artifacts/db-reset.js:58]
+    prepareUserData  ->  floor  [app/routes/session.js:16]
+    prepareUserData  ->  floor  [app/routes/session.js:17]
+    prepareUserData  ->  random  [app/routes/session.js:16]
+    prepareUserData  ->  random  [app/routes/session.js:17]
+    prepareUserData  ->  update  [app/routes/session.js:20]
+    searchCriteria  ->  log  [app/data/research-dao.js:18]
+    validateSignup  ->  test  [app/routes/session.js:159]
+    validateSignup  ->  test  [app/routes/session.js:163]
+    validateSignup  ->  test  [app/routes/session.js:167]
+    validateSignup  ->  test  [app/routes/session.js:171]
+    validateSignup  ->  test  [app/routes/session.js:181]
+    validateUserDoc  ->  callback  [app/data/user-dao.js:72]
+    validateUserDoc  ->  callback  [app/data/user-dao.js:76]
+    validateUserDoc  ->  callback  [app/data/user-dao.js:81]
+    validateUserDoc  ->  callback  [app/data/user-dao.js:87]
+    validateUserDoc  ->  comparePassword  [app/data/user-dao.js:75]
+digraph CallGraph {
+  rankdir=LR; node [shape=box fontname=Courier];
+  ":program" -> ";
+  ":program" -> "$;
+  ":program" -> "Router;
+  ":program" -> "__ecma.Array.factory;
+  ":program" -> "addSteps;
+  ":program" -> "connect;
+  ":program" -> "express;
+  ":program" -> "get;
+  ":program" -> "inspect;
+  ":program" -> "log;
+  ":program" -> "next;
+  ":program" -> "on;
+  ":program" -> "require;
+  ":program" -> "resolve;
+  ":program" -> "toLowerCase;
+  "<lambda>0" -> ";
+  "<lambda>0" -> "$;
+  "<lambda>0" -> "Area;
+  "<lambda>0" -> "__ecma.Array.factory;
+  "<lambda>0" -> "createServer;
+  "<lambda>0" -> "engine;
+  "<lambda>0" -> "exit;
+  "<lambda>0" -> "favicon;
+  "<lambda>0" -> "find;
+  "<lambda>0" -> "get;
+  "<lambda>0" -> "getAllNonAdminUsers;
+  "<lambda>0" -> "getByUserId;
+  "<lambda>0" -> "getByUserIdAndThreshold;
+  "<lambda>0" -> "getFullYear;
+  "<lambda>0" -> "getNextSequence;
+  "<lambda>0" -> "getRandomFutureDate;
+  "<lambda>0" -> "init;
+  "<lambda>0" -> "insert;
+  "<lambda>0" -> "json;
+  "<lambda>0" -> "listen;
+  "<lambda>0" -> "log;
+  "<lambda>0" -> "parseInt;
+  "<lambda>0" -> "render;
+  "<lambda>0" -> "restart;
+  "<lambda>0" -> "routes;
+  "<lambda>0" -> "session;
+  "<lambda>0" -> "set;
+  "<lambda>0" -> "setDefaults;
+  "<lambda>0" -> "setOptions;
+  "<lambda>0" -> "static;
+  "<lambda>0" -> "toArray;
+  "<lambda>0" -> "update;
+  "<lambda>0" -> "urlencoded;
+  "<lambda>0" -> "use;
+  "<lambda>10" -> "callback;
+  "<lambda>10" -> "floor;
+  "<lambda>10" -> "push;
+  "<lambda>10" -> "random;
+  "<lambda>10" -> "render;
+  "<lambda>11" -> "log;
+  "<lambda>11" -> "stringify;
+  "<lambda>12" -> "exit;
+  "<lambda>12" -> "getUserByUserName;
+  "<lambda>12" -> "log;
+  "<lambda>12" -> "parseResponse;
+  "<lambda>12" -> "render;
+  "<lambda>12" -> "validateSignup;
+  "<lambda>13" -> "addUser;
+  "<lambda>13" -> "next;
+  "<lambda>13" -> "render;
+  "<lambda>14" -> "next;
+  "<lambda>14" -> "prepareUserData;
+  "<lambda>14" -> "regenerate;
+  "<lambda>15" -> "render;
+  "<lambda>16" -> "getUserById;
+  "<lambda>16" -> "log;
+  "<lambda>16" -> "redirect;
+  "<lambda>17" -> "next;
+  "<lambda>17" -> "render;
+  "<lambda>1" -> "callback;
+  "<lambda>1" -> "displayMemos;
+  "<lambda>1" -> "dropCollection;
+  "<lambda>1" -> "encodeForHTML;
+  "<lambda>1" -> "encoder;
+  "<lambda>1" -> "end;
+  "<lambda>1" -> "getUserById;
+  "<lambda>1" -> "insert;
+  "<lambda>1" -> "log;
+  "<lambda>1" -> "next;
+  "<lambda>1" -> "parseInt;
+  "<lambda>1" -> "redirect;
+  "<lambda>1" -> "render;
+  "<lambda>1" -> "update;
+  "<lambda>1" -> "write;
+  "<lambda>1" -> "writeHead;
+  "<lambda>2" -> ";
+  "<lambda>2" -> "__ecma.Array.factory;
+  "<lambda>2" -> "callback;
+  "<lambda>2" -> "eval;
+  "<lambda>2" -> "find;
+  "<lambda>2" -> "findOne;
+  "<lambda>2" -> "getAllMemos;
+  "<lambda>2" -> "getUserById;
+  "<lambda>2" -> "isNaN;
+  "<lambda>2" -> "log;
+  "<lambda>2" -> "parseInt;
+  "<lambda>2" -> "redirect;
+  "<lambda>2" -> "render;
+  "<lambda>2" -> "resolve;
+  "<lambda>2" -> "some;
+  "<lambda>2" -> "sort;
+  "<lambda>2" -> "test;
+  "<lambda>2" -> "toArray;
+  "<lambda>2" -> "update;
+  "<lambda>2" -> "updateBenefits;
+  "<lambda>2" -> "updateUser;
+  "<lambda>3" -> "callback;
+  "<lambda>3" -> "ceil;
+  "<lambda>3" -> "findOne;
+  "<lambda>3" -> "floor;
+  "<lambda>3" -> "getAllNonAdminUsers;
+  "<lambda>3" -> "getDay;
+  "<lambda>3" -> "getFullYear;
+  "<lambda>3" -> "getMonth;
+  "<lambda>3" -> "log;
+  "<lambda>3" -> "next;
+  "<lambda>3" -> "random;
+  "<lambda>3" -> "redirect;
+  "<lambda>3" -> "render;
+  "<lambda>3" -> "slice;
+  "<lambda>4" -> ";
+  "<lambda>4" -> "__ecma.Array.factory;
+  "<lambda>4" -> "all;
+  "<lambda>4" -> "callback;
+  "<lambda>4" -> "exit;
+  "<lambda>4" -> "find;
+  "<lambda>4" -> "findOne;
+  "<lambda>4" -> "getUserById;
+  "<lambda>4" -> "log;
+  "<lambda>4" -> "map;
+  "<lambda>4" -> "next;
+  "<lambda>4" -> "parseInt;
+  "<lambda>4" -> "redirect;
+  "<lambda>4" -> "render;
+  "<lambda>4" -> "searchCriteria;
+  "<lambda>4" -> "stringify;
+  "<lambda>4" -> "then;
+  "<lambda>4" -> "toArray;
+  "<lambda>5" -> "callback;
+  "<lambda>5" -> "render;
+  "<lambda>5" -> "tryDropCollection;
+  "<lambda>6" -> "__ecma.Array.factory;
+  "<lambda>6" -> "callback;
+  "<lambda>6" -> "collection;
+  "<lambda>6" -> "forEach;
+  "<lambda>6" -> "insert;
+  "<lambda>6" -> "insertMany;
+  "<lambda>6" -> "log;
+  "<lambda>6" -> "validateLogin;
+  "<lambda>7" -> "findOne;
+  "<lambda>7" -> "getUserById;
+  "<lambda>7" -> "log;
+  "<lambda>7" -> "next;
+  "<lambda>7" -> "parseInt;
+  "<lambda>7" -> "parseResponse;
+  "<lambda>7" -> "redirect;
+  "<lambda>7" -> "render;
+  "<lambda>8" -> "callback;
+  "<lambda>8" -> "destroy;
+  "<lambda>8" -> "findOne;
+  "<lambda>8" -> "log;
+  "<lambda>8" -> "push;
+  "<lambda>8" -> "stringify;
+  "<lambda>9" -> "__ecma.Array.factory;
+  "<lambda>9" -> "collection;
+  "<lambda>9" -> "exit;
+  "<lambda>9" -> "findAndModify;
+  "<lambda>9" -> "forEach;
+  "<lambda>9" -> "insertMany;
+  "<lambda>9" -> "log;
+  "<lambda>9" -> "parseResponse;
+  "<lambda>9" -> "redirect;
+  "<lambda>9" -> "stringify;
+  "AllocationsDAO" -> "collection;
+  "AllocationsDAO" -> "log;
+  "BenefitsDAO" -> "collection;
+  "BenefitsDAO" -> "log;
+  "ContributionsDAO" -> "collection;
+  "ContributionsDAO" -> "log;
+  "MemosDAO" -> "collection;
+  "MemosDAO" -> "log;
+  "ProfileDAO" -> "collection;
+  "ProfileDAO" -> "log;
+  "ResearchDAO" -> "log;
+  "UserDAO" -> "collection;
+  "UserDAO" -> "log;
+  "errorHandler" -> "error;
+  "errorHandler" -> "render;
+  "errorHandler" -> "status;
+  "index" -> "get;
+  "index" -> "post;
+  "index" -> "use;
+  "parseResponse" -> "exit;
+  "parseResponse" -> "log;
+  "parseResponse" -> "stringify;
+}
+  ── TYPE DECLARATIONS (69) ──
+    app/assets/js/chart/chart-data-morris.js::program
+    app/assets/js/tour/redirects-steps.js::program
+    app/data/allocations-dao.js::program
+    app/data/benefits-dao.js::program
+    app/data/contributions-dao.js::program
+    app/data/memos-dao.js::program
+    app/data/profile-dao.js::program
+    app/data/research-dao.js::program
+    app/data/user-dao.js::program
+    app/routes/allocations.js::program
+    app/routes/benefits.js::program
+    app/routes/contributions.js::program
+    app/routes/error.js::program
+    app/routes/index.js::program
+    app/routes/memos.js::program
+    app/routes/profile.js::program
+    app/routes/research.js::program
+    app/routes/session.js::program
+    app/routes/tutorial.js::program
+    artifacts/db-reset.js::program
+    config/config.js::program
+    config/env/all.js::program
+    config/env/development.js::program
+    config/env/production.js::program
+    server.js::program
+    ANY
+    AllocationsDAO
+    AllocationsDAO | ANY
+    app/routes/allocations.js::program:AllocationsHandler
+    AllocationsHandler
+    __ecma.Array
+    app/data/benefits-dao.js::program:BenefitsDAO
+    BenefitsDAO
+    app/routes/benefits.js::program:BenefitsHandler
+    BenefitsHandler
+    __ecma.Boolean
+    Console
+    app/data/contributions-dao.js::program:ContributionsDAO
+    ContributionsDAO
+    app/routes/contributions.js::program:ContributionsHandler
+    ContributionsHandler
+    Date
+    DateConstructor
+    Error
+    ErrorConstructor
+    Math
+    app/data/memos-dao.js::program:MemosDAO
+    MemosDAO
+    app/routes/memos.js::program:MemosHandler
+    MemosHandler
+    __ecma.Number
+    app/data/profile-dao.js::program:ProfileDAO
+    ProfileDAO
+    app/routes/profile.js::program:ProfileHandler
+    ProfileHandler
+    Promise<any>
+    PromiseConstructor
+    RegExp
+    app/data/research-dao.js::program:ResearchDAO
+    ResearchDAO
+    app/routes/research.js::program:ResearchHandler
+    ResearchHandler
+    app/routes/session.js::program:SessionHandler
+    SessionHandler
+    __ecma.String
+    app/data/user-dao.js::program:UserDAO
+    UserDAO
+    undefined
+    void
+  ── LITERALS (first 100) ──
+    "
+
+"
+    " && this.stocks > '"
+    " does not exist"
+    " including numbers, lowercase and uppercase letters."
+    ""
+    "#learn-menu-link"
+    "#logout-menu-link"
+    "#morris-chart-area"
+    "#profile-menu-link"
+    "#redirects-tour"
+    "'"
+    "-"
+    "-1-09"
+    "-1-21"
+    "-10-06"
+    "-10-18"
+    "-10-30"
+    "-11-07"
+    "-11-19"
+    "-11-31"
+    "-12-08"
+    "-12-20"
+    "-2-10"
+    "-2-22"
+    "-3-11"
+    "-3-23"
+    "-4-12"
+    "-4-24"
+    "-5-01"
+    "-5-13"
+    "-5-25"
+    "-6-02"
+    "-6-14"
+    "-6-26"
+    "-7-03"
+    "-7-15"
+    "-7-27"
+    "-8-04"
+    "-8-16"
+    "-8-28"
+    "-9-05"
+    "-9-17"
+    "-9-29"
+    "../../config/config"
+    "../config/config"
+    "../data/allocations-dao"
+    "../data/benefits-dao"
+    "../data/contributions-dao"
+    "../data/memos-dao"
+    "../data/profile-dao"
+    "../data/research-dao"
+    "../data/user-dao"
+    "./allocations"
+    "./app/routes"
+    "./benefits"
+    "./config/config"
+    "./contributions"
+    "./error"
+    "./memos"
+    "./profile"
+    "./research"
+    "./session"
+    "./tutorial"
+    "./user-dao"
+    ".html"
+    ".js"
+    "/"
+    "/../config/env/"
+    "/../config/env/all.js"
+    "/allocations/:userId"
+    "/app/assets"
+    "/app/assets/favicon.ico"
+    "/app/views"
+    "/benefits"
+    "/contributions"
+    "/dashboard"
+    "/learn"
+    "/login"
+    "/logout"
+    "/memos"
+    "/profile"
+    "/research"
+    "/signup"
+    "/tutorial"
+    "0"
+    "192.168.56.20"
+    "2025-11-30"
+    "2030-01-10"
+    "8080"
+    "<h1>The following is the stock information you requested.</h1>
+
+"
+    "<script>document.write("<script src='http://" + (location.host || "localhost").split(":")[0] + ":35729/livereload.js'></" + "script>");</script>"
+    "A10 Redirects"
+    "Admin"
+    "Admin_123"
+    "Allocations to insert:"
+    "Balance ($)"
+    "Bank Routing number does not comply with requirements for format specified"
+    "Connected to the database"
+    "Content of my popover oi"
+    "Content of my popover"
+[cpg-query] Report complete.
+[INFO ] writing to storage at `/opt/joern/workspace/cpg.bin/cpg.bin.tmp`
+[INFO ] closed graph at /opt/joern/workspace/cpg.bin/cpg.bin.tmp
+closing/saving project `cpg.bin`
